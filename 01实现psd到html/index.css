@@ -1,0 +1,157 @@
+.Billboard{
+	position: relative;
+}
+.index-banner-bg{
+  background-image: url("pic/index-banner-bg.png") ;
+  height: 652px;
+  overflow: hidden;
+}
+.index-banner-text{
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -360px;
+}
+.text-logo{
+	background: url(pic/index-banner-text.png) no-repeat;
+	width: 712px;
+	height: 52px;
+}
+.text-logo+p{
+	margin-top: 30px;
+	text-align: center;
+	color: #4d4d4d;
+	font-size: 16px;
+}
+.banner-start{
+	background: url(pic/shape-start.png);
+    width: 290px;
+    height: 49px;
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    margin-top: 40px;
+}
+.banner-start a{
+	text-align: center;
+	line-height: 49px;
+	height: 49px;
+	color: #fff;
+}
+/*------------------------banner部分结束-------------------- */
+.services{
+	height: 422px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.services ol{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	color: #727272
+}
+.services ol li{
+	float: left;
+	display: block;
+	width: 350px;
+	height: 222px;
+	margin-right: 75px;
+}
+.services ol li:last-of-type{
+	margin-right: 0px;
+}
+.services ol li img{
+	margin: 0 auto;
+}
+.services ol li p:first-of-type{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+/*------------------------services部分结束-------------------- */
+.section-title {
+	font-size: 30px;
+	margin-bottom: 0.5em;
+}
+.video{
+	text-align: center;
+}
+video{
+	width: 690px;
+	height: 388px;
+	margin: 80px auto 100px auto;
+	display: block;
+}
+/*------------------------video部分结束-------------------- */
+.recent-work{
+	margin-left: 10%;
+}
+.recent-work .section-title{
+	text-align:center;
+}
+.recent-work figure{
+	width: 200px;
+	height: 320px;
+	background-color: #f7f7f7;
+	float: left;
+	margin-right: 50px;
+	text-align: center;
+	color: #d2d1d1;
+}
+.brand-text{
+	font-size: 25px;
+	font-style:italic;
+}
+.brand-text+p{
+	font-size: 10px;
+}
+.recent-work figure:last-of-style{
+	margin-right: 0px;
+}
+/*------------------------recent work部分结束-------------------- */
+
+.subscription-box{
+	height: 362px;
+	background-color: #f5f5f5;
+	text-align: center;
+	position: relative;
+	margin-top: 34px
+}
+.subscription-box div{
+	padding-top: 100px;
+}
+subscription-box div{
+	width: 308px;
+	height: 45px;
+	background-image: url(pic/shape23.png);
+}
+/*------------------------subscription部分结束-------------------- */
+
+.social-media>div{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: inline-block;
+}
+.social-media div div{
+	width: 70px;
+	height: 70px;
+	float: left;
+	border:2px solid #4d4d4d;
+	position:relative;
+}
+.social-media div div:nth-of-type(2){
+	background-color: #55acee;
+	border:none;
+	width: 74px;
+	height: 74px;
+}
+.social-media div div img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+}
+/*--------------------social media部分结束-------------------- */
+
