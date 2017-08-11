@@ -1,4 +1,4 @@
-# Bootstrap项目实战记录
+# [Bootstrap项目实战记录](https://htmlpreview.github.io/?https://raw.githubusercontent.com/CLovefree/my-website-collection-cases/master/05Bootstrap%E5%AE%9E%E6%88%981/%E5%AE%9E%E6%88%9801/index.html)
 
 ## 初始部分
 
@@ -42,7 +42,7 @@
 1. 超大屏幕（Jumbotron）。顾名思义该组件可以增加标题的大小，并为登陆页面内容添加更多的外边距（margin）。使用超大屏幕（Jumbotron）的步骤如下：
 
    - 创建一个带有 class **.jumbotron**. 的容器 <div>。
-   - 除了更大的 <h1>，字体粗细 font-weight*被减为 200。
+   - 除了更大的 <h1>，字体粗细 font-weight被减为 200。
 
 2. 左边的图文结构再做一个百分之百的栅格系统
 
