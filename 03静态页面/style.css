@@ -13,7 +13,8 @@ li{
 }
 a{
 	text-decoration: none;
-	color: #044864
+	color: #044864;
+	cursor: pointer;
 }
 a:hover,a：active{
 	color: #fff;
