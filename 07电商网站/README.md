@@ -26,6 +26,8 @@ fr有浮动
 
 clear父清浮动，父元素有高度不用清浮动
 
+父亲overflow：hidden
+
 gradient渐变
 
 border-radius圆角
@@ -64,5 +66,11 @@ IE8及以下transform
 
 IE8及以下css3选择器
 
+search框
+
 IE7及以下header
+
+checkbox样式修改除了谷歌浏览器
+
+谷歌浏览器input文字颜色
 
