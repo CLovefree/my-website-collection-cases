@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/*@import url(font-awesome.min.css);*/
+/*Reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;	
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body{
+	line-height: 1;
+}
+ol,ul{
+	list-style: none;
+}
+blockquote,q{
+	quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	-webkit-text-size-adjust: none;
+}
+a{
+	color: inherit;
+}
+/*box-sizing*/
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Basc*/
+@-ms-viewport{
+	width: device-width;
+}
+body{
+	-ms-overflow-style: scrollbar;
+}
+@media screen and (max-width: 480px) {
+	html,body{
+		min-width: 320px;
+	}
+}
+body{
+	background-color: #fff;
+}
+
+/*Type*/
+html{
+	font-size: 13pt;
+}
+@media screen and (max-width: 1600px) {
+	html{
+		font-size: 11pt;
+	}
+}
+@media screen and (max-width: 1280px) {
+	html{
+		font-size: 11pt;
+	}
+}
+@media screen and (max-width: 980px) {
+	html{
+		font-size: 12pt;
+	}
+	#banner-full img{
+		min-height: 50vh;
+		height: 50vh !important;
+	}
+
+}
+@media screen and (max-width: 736px) {
+	html{
+		font-size: 12pt;
+	}
+}
+@media screen and (max-width: 480px) {
+	html{
+		font-size: 12pt;
+	}
+}
+
+body{
+	background-color: #fff;
+	color: #fff;
+}
+body, input, select, textarea {
+		font-family: "Poppins", sans-serif;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 1.65;
+}
+
+a{
+	text-decoration: none;
+}
+strong,b{
+	font-weight: 600;
+}
+em,i{
+	font-style: italic;
+}
+p{
+	margin: 0 0 2rem 0;
+}
+.align-center{
+	text-align: center;
+}
+h2{
+	font-size: 1.75rem;
+}
+/*Header*/
+header{
+	z-index: 2;
+	position: absolute;
+	top: 20px;
+	color: #fff;
+	width: 100vw;
+}
+.logo span{
+	color: #aaa;
+	font-size: 80%;
+}
+.logo{
+	margin-left: 40px;
+	float: left;
+}
+.menu{
+	float: right;
+	margin-right: 40px;
+}
+.menu span{
+	margin-bottom: 3px;
+}
+.menu i{
+	display: inline-block;
+	height: 14px;
+	width: 25px;
+	border-bottom: 3px solid #fff;
+	border-top: 9px double #fff;
+}
+/*Banner*/
+.banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.banner ol{
+	position: relative;
+	bottom: -90vh;
+	left: 50vw;
+	margin-left: -59px;
+	letter-spacing: 10px;
+	z-index: 3;
+}
+.banner ol li{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #8D8A8A;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.banner ol .active{
+	background-color: #fff;
+}
+#banner-full article{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+#banner-full img{
+	width: 100vw;
+	height: 100vh;
+}
+#banner-full .inner header{
+	width: 100vw;
+	text-align: center;
+	margin-top: 30vh;
+}
+#banner-full .inner h2{
+	font-size: 10vw;
+	color: #fff;
+	letter-spacing: 10px;
+}
+
+#banner-full .inner p{
+	font-size: 1.5vw;
+	color: #898585;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+#banner-full .inner p:after{
+	content: "";
+	display: block;
+	width: 500px;
+	height: 1.6px;
+	background-color: #898585;
+	margin: 10px auto;
+}
+/*inner-header*/
+.wrapper .inner header{
+	margin: 10px auto;
+	position: static;
+	width: 100%;
+}
+.wrapper .inner header h2{
+	font-size: 2rem;
+	font-weight: 800;
+}
+.wrapper .inner header p{
+	margin: 1vh 0 1vh 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+.wrapper .inner header p:after{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	height: 0.1vh;
+	background-color: #aaa;
+	opacity: 0.5;
+	margin-top: 1rem;
+}
+/*one*/
+#one{
+	position: absolute;
+	top: 100vh;
+	background-color: #F2F2F2;
+}
+#one .inner{
+	height: 80vh;
+	margin: 10vh auto;
+	width: 100vw;
+}
+#one .inner .grid-style{
+	height: 100%;
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+#one .inner .box{
+	width: 600px;
+	height: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+#one .inner .box img{
+	width: 100%;
+}
+#one .inner .box1{
+	left: 0;
+}
+#one .inner .box2{
+	right: 0;
+}
+#one .box .content{
+	position: relative;
+}
+#one .box .content h2{
+	color: #000;
+}
+#one .box .content p{
+	font-size: 12px;
+	color: #aaa;
+	text-transform: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#one .box .content>p{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#one .box .content footer{
+	width: 10em;
+	height: 3rem;
+	line-height: 3rem;
+	color: #000;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	margin: 10px auto;
+}
+#two{
+	position: absolute;
+	top: 200vh;
+	width: 100vw;
+	background-color: #F2F2F2;
+}
+.style3{
+	background-color: #000;
+	background-image: url(images/bg.jpg);
+	color: #bfbfbf;
+	background: url(images/bg.jpg) center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+#two header{
+	color: #fff;
+	padding-top: 10vh;
+}
+#three{
+	position: absolute;
+	top: 230vh;
+}
+#three header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100vw;
+	color: #aaa;
+	margin-bottom: -1px;
+}
+#three header h2{
+	color: #000;
+}
+#three .inner{
+	background-color: #F2F2F2;
+}
+#three .gallery{
+	width: 96vw;
+	margin: 0 auto;
+}
+#three .gallery>div{
+	display: inline-block;
+	width: 45vw;
+	margin-right: 5vw;
+	margin-bottom: 20px;
+}
+#three .gallery>div:nth-child(2n){
+	margin-right: 0;
+}
+#three .gallery img{
+	width: 100%;
+	border: 20px solid #fff;
+}
+@media screen and (max-width: 1280px) {
+	.banner{
+		min-height: 75vh;
+		height: 75vh !important;
+	}
+	#banner-full img{
+		min-height: 75vh;
+		height: 75vh !important;
+	}
+	#banner-full .inner header{
+		margin-top: 10vh;
+	}
+	.banner ol{
+		bottom: -70vh;
+	}
+	#one{
+		top: 75vh;
+	}
+	#one .inner .grid-style{
+		width: 100vw;
+	}
+	#one .inner .box{
+		width: 48vw;
+	}
+	#two{
+		top: 175vh;
+	}
+	#three{
+		top: 210vh;
+	}
+}
+@media screen and (max-width: 980px) {
+	.banner{
+		min-height: 50vh;
+		height: 50vh !important;
+	}
+	#banner-full img{
+		min-height: 50vh;
+		height: 50vh !important;
+	}
+	.banner ol{
+		bottom: -45vh;
+	}
+	#one{
+		top: 50vh;
+		position: relative;
+	}
+	#one .inner{
+		height: auto;
+		margin: 5vh auto;
+	}
+	#one .inner .box{
+		width: 90vw;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+	}
+	#two{
+		position: relative;
+		top: 46vh;
+	}
+	#three{
+		position: relative;
+		top: 44vh;
+	}
+	#three .gallery>div{
+		width: 96vw;
+	}
+	header h2{
+		font-size: 14px;
+	}
+	header p{
+		font-size: 11px;
+	}
+}
+#menu{
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	height: 100vh;
+	width: 15vw;
+	background-color: #414040;
+	color: #BDBCBC;
+	z-index: 3;
+	padding-top: 20px;
+}
+#menu li{
+	height: 80px;
+}
+#menu li:after{
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #BDBCBC;
+}
+#menu a{
+	font-size: 20px;
+	line-height: 50px; 
+}
+#menu a:hover{
+	color: #fff;
+}
+#menu .close{
+	display: block;
+	content: "\2716";
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
