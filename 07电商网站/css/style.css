@@ -420,10 +420,10 @@ body{
 	}
 	#search .update ul{
 		width: 380px;
-		height: 30px;
+		/*height: 90px;*/
 		position: absolute;
-		left: 0px;
-		top: 0px;
+	/*	left: 0px;
+		top: 0px;*/
 	}
 	#search .update ul li{
 		height: 30px;
