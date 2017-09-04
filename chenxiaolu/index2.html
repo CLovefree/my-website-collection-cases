@@ -42,7 +42,9 @@
 		<section id="page1" class="text-center">
 		<div class="overlay">
 			<div class="me">
-				<img src="img/me.png" alt="">
+				<div class="img center">
+					<img src="img/me.jpg" alt="">
+				</div>
 			</div>
 			<div class="text">
 				<h1>陈璐</h1>
@@ -55,7 +57,7 @@
 		<!-- page2 -->
 		<section id="page2">
 			<div class="container">
-				<div class="section-title text-center">
+				<div class="section-title center text-center">
 					<h2>项目经验 <strong>works</strong></h2>
 					<div class="line">
 						<hr>
@@ -152,9 +154,9 @@
 		<!-- page3 -->
 		<section id="page3">
 			<div class="container">
-				<div class="section-title text-center">
-					<h2>擅长技术 <strong>works</strong></h2>
-					<div class="line">
+				<div class="section-title center text-center">
+					<h2>擅长技术 <strong>skills</strong></h2>
+					<div class="line center">
 						<hr>
 					</div>
 					<p>我的项目经验巴啦啦绿绿绿绿</p>
@@ -192,33 +194,63 @@
 		</section>
 		<!-- page4 -->
 		<section id="page4" class="page">
-			<div class="bg">
-				<h2 class="cen titelh2">教育背景</h2>
+			<div class="overlay">
+				<div class="container clearfix">
+					<div class="section-title center text-center">
+						<h2>教育背景 <strong>Education</strong></h2>
+						<div class="line center">
+							<hr>
+						</div>
+						<p>我的项目经验巴啦啦绿绿绿绿</p>
+					</div>	
+					<div class="text pull-right">
+						<div class="step step1">
+							<p><strong>山东大学</strong>药学院本科</p>
+							<img src="img/me01.jpg" alt="">
+						</div>
+						<div class="step step2">
+							<p><strong>自学</strong>PS及Web前端</p>
+							<img src="img/me02.jpg" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
-
 		</section>
 		<!-- page5 -->
 		<section id="page5" class="page">
-			<h2 class="cen titelh2">人生经历</h2>
+			<div class="container">
+				<div class="section-title center text-center">
+					<h2>人生经历 <strong>Experience</strong></h2>
+					<div class="line center">
+						<hr>
+					</div>
+					<p>我的项目经验巴啦啦绿绿绿绿</p>
+				</div>
+			</div>
 		</section>
 		<!-- page6 -->
 		<section id="page6" class="page">
-			<div class="texth">
-				<h2 class="cen titelh2">了解更多<span><a href="">下载简历</a></span></h2>
-				<p class="cen">My Website:<a href="www.chenxiaolu.club">chenxiaolu.club</a></p>
-			</div>
-			<div class="icon">
-				<div class="qq">
-					<a href="tencent://message/?uin=765756616&Site=&Menu=yes"><img src="img/qq.png" alt="qq"></a>
-					<p style="display: none;">QQ:765756616</p>
+			<div class="container">
+				<div class="section-title center text-center">
+					<h2>了解更多 <strong>Contact</strong></h2>
+					<div class="line center">
+						<hr>
+					</div>
+					<p>我的项目经验巴啦啦绿绿绿绿</p>
 				</div>
-				<div class="git">
-					<a href="https://github.com/CLovefree"><img src="img/git.png" alt="git"><a>
-					<p style="display: none;">GitHub:Clovefree</p>
-				</div>
-				<div class="mail">
-					<a href="mailto:clovelu@outlook.com"><img src="img/mail.png" alt="mail"></a>
-					<p style="display: none;">mail:clovelu@outlook.com</p>
+				<div class="icon">
+					<div class="qq">
+						<a href="tencent://message/?uin=765756616&Site=&Menu=yes"><img src="img/qq.png" alt="qq"></a>
+						<p style="display: none;">QQ:765756616</p>
+					</div>
+					<div class="git">
+						<a href="https://github.com/CLovefree"><img src="img/git.png" alt="git"><a>
+						<p style="display: none;">GitHub:Clovefree</p>
+					</div>
+					<div class="mail">
+						<a href="mailto:clovelu@outlook.com"><img src="img/mail.png" alt="mail"></a>
+						<p style="display: none;">mail:clovelu@outlook.com</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -236,9 +268,11 @@
 			var scrollTop = $(window).scrollTop();
 			if(scrollTop > navHeight){
 				$(".navbar-default").addClass("on");
+				$("#top-btn").fadeIn(1000);
 			}
 			else{
 				$(".navbar-default").removeClass("on");
+				$("#top-btn").stop(true,true).fadeOut(1000); 
 			}
 		});
 		$('body').scrollspy({
@@ -257,6 +291,29 @@
                     return false;
                 }
             }
+        });
+		var $container = $('#lightbox');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 550,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        $('#cat a').click(function() {
+            $("#cat a").removeClass('active');
+			$(this).addClass("active");
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 550,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
         });
 	</script>
 </body>
