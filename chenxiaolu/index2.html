@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>陈璐的简历</title>
+	<link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://cdn.bootcss.com/owl-carousel/1.32/owl.carousel.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/owl-carousel/1.32/owl.theme.min.css" rel="stylesheet">
@@ -26,13 +27,16 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		        </button>
-				<a href="" class="navbar-brand">ChenLu</a>
+				<a href="" class="navbar-brand"><img src="img/lu.png" alt=""></a>
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-collaspe">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#page1" class="page-scroll">me</a></li>
-					<li><a href="#page2" class="page-scroll">resume</a></li>
-					<li><a href="#page3" class="page-scroll">contact</a></li>
+					<li><a href="#page2" class="page-scroll">works</a></li>
+					<li><a href="#page3" class="page-scroll">skills</a></li>
+					<li><a href="#page4" class="page-scroll">education</a></li>
+					<li><a href="#page5" class="page-scroll">experience</a></li>
+					<li><a href="#page6" class="page-scroll">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -217,7 +221,7 @@
 			</div>
 		</section>
 		<!-- page5 -->
-		<section id="page5" class="page">
+		<section id="page5">
 			<div class="container">
 				<div class="section-title center text-center">
 					<h2>人生经历 <strong>Experience</strong></h2>
@@ -229,7 +233,7 @@
 			</div>
 		</section>
 		<!-- page6 -->
-		<section id="page6" class="page">
+		<section id="page6">
 			<div class="container">
 				<div class="section-title center text-center">
 					<h2>了解更多 <strong>Contact</strong></h2>
@@ -256,7 +260,7 @@
 		</section>
 	<footer>
 		<a href="#" id="top-btn">
-			<p></p>
+			<span></span>
 		</a>
 	</footer>
 	<script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
@@ -286,7 +290,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - 80
+                        scrollTop: target.offset().top
                     }, 900);
                     return false;
                 }

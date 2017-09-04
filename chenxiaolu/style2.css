@@ -31,6 +31,7 @@ a,a:hover,a:focus{
 	font-size:30px;
 	font-weight:900;
 	color:#fff;
+	padding: 0;
 }
 #menu.navbar-default .navbar-nav > li > a{
 	font-size:22px;
@@ -148,7 +149,7 @@ a,a:hover,a:focus{
     margin-right: -1px;
 }
 .section-title{
-	margin: 50px auto;
+	margin: 100px auto 20px;
 }
 .section-title h2{
 	font-weight: 400;
@@ -210,10 +211,13 @@ a,a:hover,a:focus{
 	width:200px;
 	height:300px;
 	background-color: #199475;
-	border: 2px solid #a4f3e9;
-	border-image: -webkit-linear-gradient(red, #199475) 12 12;
-	border-image: -moz-linear-gradient(red, #199475) 12 12;
-	border-image: linear-gradient(red, #199475) 12 12;
+	background-image: -webkit-linear-gradient(#224f44, #199475);
+	background-image: -moz-linear-gradient(#224f44, #199475);
+	background-image: linear-gradient(#224f44, #199475);
+	border: 5px solid #199475;
+	border-image: -webkit-linear-gradient(#ef4714,#199475) 10 10;
+	border-image: -moz-linear-gradient(#ef4714,#199475) 10 10;
+	border-image: linear-gradient(#ef4714,#199475) 10 10;
 	position: absolute;
 	left:0;
 	top:0;			
@@ -310,9 +314,26 @@ a,a:hover,a:focus{
     align-items: center;
 	margin-bottom: 20px;
 }
+#page5{
+	height:100vh;
+}
 #page6{
+	height: 100vh;
 	background: -webkit-linear-gradient(to right,#74ebd5,#acb6e5);
 	background: -o-linear-gradient(to right,#74ebd5,#acb6e5);
 	background: -moz-linear-gradient(to right,#74ebd5,#acb6e5);
 	background: linear-gradient(to right,#74ebd5,#acb6e5);
+}
+footer #top-btn span{
+	width: 20px;
+	height: 20px;
+	border: 5px solid #fff;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	transform: rotate(45deg);
+	filter:drop-shadow(5px 5px 5px black); 
 }
