@@ -1,0 +1,46 @@
+.container { 
+  color : #000000; 
+  background : #dcf4ee; 
+  font-family : 'Microsoft YaHei', Times, serif;
+  font-size : 12pt;
+  width: 780px;
+  height: 1103px;
+  margin: 50px auto;
+}
+
+a { 
+  text-decoration : underline; 
+  color : #0000ff; 
+}
+
+a:link:after, a:visited:after {
+content: " (" attr(href) ") ";
+font-size: 70%;
+}
+
+nav, sidebar, footer, header, aside { 
+  display : none; 
+}
+
+nav{
+	display: none;
+}
+#page1 a{
+	display: none;
+}
+#page6 .icon a{
+	display: none;
+}
+#page1{
+	height: 300px;
+	border-bottom: 1px solid #000;
+}
+#page1 .me{
+	width: 90px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+#page1 .me img{
+	width: 120px;
+	margin-left: -10px;
+}
