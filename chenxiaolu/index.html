@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://cdn.bootcss.com/owl-carousel/1.32/owl.carousel.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/owl-carousel/1.32/owl.theme.min.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
-	<link rel="stylesheet" type="text/css" href="print.css" media="screen">
+	<link id="link1" rel="stylesheet" type="text/css" href="style2.css">
 	<!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+	function toFace1(){
+		document.getElementById('link1').href='style2.css';
+	}
+	function toFace2(){
+		document.getElementById('link1').href='print.css';
+	}
+	</script>
 </head>
 <body>
-<div class="container">
+<div class="wrapper">
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -46,8 +53,8 @@
 	<div class="gradient">
 		<section id="page1" class="text-center">
 		<div class="overlay">
-		<a class="change">网页换肤</a>
-		<a class="viewprint">打印预览</a>
+		<input id="btn1" type="button" value="网页换肤" onclick="toFace1()"/>
+		<input id="btn2" type="button" value="打印预览" onclick="toFace2()" />
 			<div class="me">
 				<div class="img center">
 					<img src="img/me.jpg" alt="">
@@ -273,9 +280,12 @@
 					</div>
 				</div>
 				<div class="icon">
+					
 					<div class="qq">
-						<a href="tencent://message/?uin=765756616&Site=&Menu=yes"><img src="img/qq.png" alt="qq"></a>
+						<div>
+						 <a href="tencent://message/?uin=765756616&Site=&Menu=yes"><img src="img/qq.png" alt="qq"></a>
 						<p>QQ:765756616</p>
+						</div>
 					</div>
 					<div class="git">
 						<a href="https://github.com/CLovefree"><img src="img/git.png" alt="git"></a>
