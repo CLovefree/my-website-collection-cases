@@ -1,4 +1,4 @@
-.container { 
+.wrapper { 
   color : #000000; 
   background : #dcf4ee; 
   font-family : 'Microsoft YaHei', Times, serif;
@@ -7,7 +7,6 @@
   height: 1103px;
   margin: 50px auto;
 }
-
 a { 
   text-decoration : underline; 
   color : #0000ff; 
@@ -21,7 +20,6 @@ font-size: 70%;
 nav, sidebar, footer, header, aside { 
   display : none; 
 }
-
 nav{
 	display: none;
 }
