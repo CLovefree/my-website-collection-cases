@@ -67,19 +67,23 @@ a,a:hover,a:focus{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
 	height: 100vh;
 }
-#page1 .change{
+#page1 input{
 	color: #fff;
 	position: absolute;
 	top: 100px;
-	left: 4em;
 	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid #fff;
 }
-#page1 .viewprint{
-	color: #fff;
-	position: absolute;
-	top: 100px;
+#page1 input:hover,#page1 input:active{
+	background-color: #fff;
+	color: #199475;
+}
+#btn1{
+	left: 4em;
+}
+#btn2{
 	left: 10em;
-	cursor: pointer;
 }
 #page1 .me{
 	padding-top: 20vh;
