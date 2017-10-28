@@ -387,17 +387,13 @@ a,a:hover,a:focus{
 	padding: 20px;
 	cursor: pointer;
 	clear: both;
+	width: 100vw;
+	font-size: 10px;
 }
-
 @media (max-width: 767px){
 	#page5 .intro .step{
-		width: 100vw;
+		width: 75vw;
 		font-size: 10px;
-	}
-}
-@media (min-width: 768px){
-	#page5 .intro .step{
-		width: 70vw;
 	}
 }
 #page5 .intro .step h4{
